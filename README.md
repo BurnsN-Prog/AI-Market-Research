@@ -1,50 +1,22 @@
-# React + TypeScript + Vite
+# Market Research Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This dashboard visualizes survey data to inform the market strategy for Beats by Dre's wireless speaker product.
 
-Currently, two official plugins are available:
+- 🔗 **Live Dashboard:** [View Here](https://BurnsN-Prog.github.io/AI-Market-Research/)
+- 📊 **Gamma Presentation:** [View Presentation](https://gamma.app/docs/High-Fidelity-Wireless-Speaker-Recommendation-For-Beats-by-Dre-hdd2x1twi3x9gbo)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Context
+This project was completed as part of my **Market Research & Consumer Data Analytics AI Externship**. The goal was to analyze consumer survey data and derive insights into product features, pricing, and market positioning for a potential high-fidelity wireless speaker launch.
 
-## Expanding the ESLint configuration
+## Key Insights
+- 70% of respondents are aged 18-24.
+- Sound quality and battery life are top priorities.
+- Price sensitivity varies with income; older consumers show willingness to pay up to $350.
+- JBL and Bose dominate the market share, with Beats among the mentioned brands.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tools & Libraries Used
+- The Gamma app
+- React (Vite)
+- Recharts (Data Visualization)
+- TailwindCSS
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
